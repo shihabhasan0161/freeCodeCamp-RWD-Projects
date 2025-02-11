@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Documentation Page</title>
+    <link rel="stylesheet" href="TechnicalDocumentationPage.css">
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                <p>CSS is one of the core languages of the open web and has a standardized W3C specification. Developed in levels, CSS1 is now obsolete, CSS2.1 is a recommendation, and CSS3, now split into smaller modules, is progressing on the standardization track.</p>
+                <p>CSS is used by both the authors and readers of web pages to define colors, fonts, layout, and other aspects of document presentation. It is designed to enable the separation of document structure (written in HTML or a similar markup language) from document presentation (written in CSS).</p>
+            </article>
+            <code>
+                p {
+                    color: blue;
+                    font-size: 16px;
+                }
+                span {
+                    font-weight: bold;
+                }
+            </code>
+            <ul>
+                <li>Color: The color property is used to set the color of the text.</li>
+                <li>Font-size: The font-size property is used to set the size of the text.</li>
+                <li>Font-weight: The font-weight property is used to set the weight of the text.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="css_styling_basics">
+            <header>CSS styling basics</header>
+            <article>
+                <p>There are three ways of inserting a style sheet:</p>
+                <ol>
+                    <li>External CSS</li>
+                    <li>Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ol>
+                <p>External CSS: An external style sheet is ideal when the style is applied to many pages. With an external style sheet, you can change the look of an entire website by changing just one file.</p>
+                <p>Internal CSS: An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the element, inside the head section.</p>
+            </article>
+            <code>
+                body{
+                    background-color: lightblue;
+                }
+                h1{
+                    color: white;
+                    text-align: center;
+                }
+            </code>
+            <ul>
+                <li>Background-color: The background-color property is used to set the background color of an element.</li>
+                <li>Color: The color property is used to set the color of the text.</li>
+                <li>Text-align: The text-align property is used to set the horizontal alignment of a text.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="css_text_styling">
+            <header>CSS text styling</header>
+            <article>
+                <p>The CSS text properties allow you to set the following properties:</p>
+                <ul>
+                    <li>Text-color</li>
+                    <li>Text-alignment</li>
+                    <li>Text-decoration</li>
+                </ul>
+                <p>The text-color property is used to set the color of the text. The text-alignment property is used to set the horizontal alignment of a text. The text-decoration property is used to set or remove decorations from text.</p>
+            </article>
+            <code>
+                p{
+                    color: blue;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+            </code>
+            <ul>
+                <li>Color: The color property is used to set the color of the text.</li>
+                <li>Text-align: The text-align property is used to set the horizontal alignment of a text.</li>
+                <li>Text-decoration: The text-decoration property is used to set or remove decorations from text.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="css_layout">
+            <header>CSS layout</header>
+            <article>
+                <p>A CSS layout is a way of arranging a web page using CSS. Every website has a specific layout to display content in a specific manner. A good layout gives a website a good look and feel. CSS layout is a way of arranging a web page using CSS.</p>
+                <p>There are four different types of CSS layout:</p>
+                <ol>
+                    <li>Fixed Layout</li>
+                    <li>Fluid Layout</li>
+                    <li>Responsive Layout</li>
+                    <li>Grid Layout</li>
+                </ol>
+            </article>
+            <code>
+                .container{
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                .item{
+                    width: 50%;
+                    float: left;
+                }
+            </code>
+            <ul>
+                <li>Width: The width property is used to set the width of an element.</li>
+                <li>Margin: The margin property is used to create space around elements, outside of any defined borders.</li>
+                <li>Float: The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="floats">
+            <header>Floats</header>
+            <article>
+                <p>The float property specifies whether an element should float to the left, right, or not at all. The float property can have one of the following values:</p>
+                <ul>
+                    <li>Left: The element floats to the left of its container.</li>
+                    <li>Right: The element floats to the right of its container.</li>
+                    <li>None: The element does not float (will be displayed just where it occurs in the text). This is default.</li>
+                    <li>Inherit: The element inherits the float value of its parent.</li>
+                </ul>
+            </article>
+            <code>
+                img{
+                    float: right;
+                }
+            </code>
+            <ul>
+                <li>Float: The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.</li>
+            </ul>
+        </section>
+        <section class="main-section" id="reference">
+            <header>Reference</header>
+            <ul>
+                <li>All the documentation in this page is taken from MDN</li>
+                <li>For more information, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN web docs</a></li>
+            </ul>
+        </section>
+        <nav id="navbar">
+            <header>CSS Documentation</header>
+            <ul>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#css_styling_basics" class="nav-link">CSS styling basics</a></li>
+                <li><a href="#css_text_styling" class="nav-link">CSS text styling</a></li>
+                <li><a href="#css_layout" class="nav-link">CSS layout</a></li>
+                <li><a href="#floats" class="nav-link">Floats</a></li>
+                <li><a href="#reference" class="nav-link">Reference</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
