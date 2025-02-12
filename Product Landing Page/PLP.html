@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="plp.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img" src="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg" alt="freecodecamp logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <section id="hero">
+                <h2>Learn to code by watching others</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                    <input id="submit" type="submit" value="Get Started" class="btn">
+                </form>
+            </section>
+
+            <section id="features">
+                <div class="grid">
+                    <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                    <div class="desc">
+                        <h2>Free Courses</h2>
+                        <p>Our free courses will provide you with a comprehensive learning experience.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+                    <div class="desc">
+                        <h2>Premium Courses</h2>
+                        <p>Our premium courses will provide you with a more in-depth learning experience.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
+                    <div class="desc">
+                        <h2>Professional Courses</h2>
+                        <p>Our professional courses will provide you with a more advanced learning experience.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works">
+                <h2>How it works</h2>
+                <p>Our platform is easy to use. You can watch & subscribe to our YouTube Channel Below:</p>
+                <iframe id="video" height="315" 
+                    src="https://www.youtube.com/embed/kUMe1FH4CHE?si=ck70gfJ_jHY5FyKi"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+            </section>
+
+            <section id="pricing">
+                <div class="product" id="free">
+                    <div class="level">Free Plan</div>
+                    <h2>$0</h2>
+                    <ol>
+                        <li>Comprehensive learning</li>
+                        <li>Basic features</li>
+                        <li>Community access</li>
+                        <li>Basic support</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="premium">
+                    <div class="level">Premium Plan</div>
+                    <h2>$29</h2>
+                    <ol>
+                        <li>In-depth learning</li>
+                        <li>Advanced features</li>
+                        <li>Premium community access</li>
+                        <li>Priority support</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="professional">
+                    <div class="level">Professional Plan</div>
+                    <h2>$59</h2>
+                    <ol>
+                        <li>Advanced learning</li>
+                        <li>All features included</li>
+                        <li>Expert community access</li>
+                        <li>24/7 support</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+
+            <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <span>Copyright 2024, freeCodeCamp</span>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
