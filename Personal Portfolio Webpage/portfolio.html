@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio WebPage</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="#welcome-section">Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <p class="subtitle">A Passionate Web Developer</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="projects" class="project-section">
+            <h2 class="section-title">My Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" class="project-link">
+                        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="tribute page">
+                        <div class="project-details">
+                            <h3>Tribute Page</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" class="project-link">
+                        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="calculator">
+                        <div class="project-details">
+                            <h3>Javascript Calculator App</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a
+            href="https://codepen.io/FreeCodeCamp/"
+            class="btn btn-show-all"
+            target="_blank"
+            >Show all<i class="fas fa-chevron-right"></i>
+            </a>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="contact-header">
+                <h2 class="section-title">Let's Work Together...</h2>
+                <p class="subtitle">Connect with me now on</p>
+            </div>
+            <div class="social-links">
+                <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:example@email.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">
+            **This is just a fake portfolio. All the projects and contact details given are not real.
+        </p>
+        <p class="footer-text">
+            &copy; 2025 Created for
+            <a href="https://www.freecodecamp.com/" target="_blank">
+                freeCodeCamp <i class="fab fa-free-code-camp"></i>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
